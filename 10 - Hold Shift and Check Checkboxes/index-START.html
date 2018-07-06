@@ -99,6 +99,14 @@
   </div>
 
 <script>
+  const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
+
+  function handleCkeck(e) {
+    console.log(e.shiftKey);
+  };
+
+  checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCkeck));
+
 </script>
 </body>
 </html>
